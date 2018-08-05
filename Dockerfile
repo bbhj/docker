@@ -10,7 +10,8 @@ MAINTAINER Dean dean@airdb.com
 WORKDIR  /go/src/github.com/bbhj/docker
 ADD . $WORKDIR
 RUN godep get -v
+RUN go build main.go  
 
 EXPOSE 8080
 
-CMD ["bee run -downdoc=true -gendoc=true"]
+CMD ["./main"]
