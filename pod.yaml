@@ -17,16 +17,16 @@ spec:
     spec:
       containers:
       - env:
-        image: hub.tencentyun.com/bbhj/wechat@$IMAGE_DIGEST
+        image: hub.tencentyun.com/bbhj/docker
         imagePullPolicy: Always
         name: moon
         resources:
           limits:
-            cpu: 500m
-            memory: 1Gi
+            cpu: 400m
+            memory: 400Mi
           requests:
-            cpu: 250m
-            memory: 256Mi
+            cpu: 200m
+            memory: 200Mi
       imagePullSecrets:
       - name: qcloudregistrykey
       - name: tencenthubkey
