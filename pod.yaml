@@ -47,3 +47,9 @@ spec:
     targetPort: 8080
   selector:
     qcloud-app: moon
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 115.159.20.32
