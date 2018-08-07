@@ -41,7 +41,7 @@ metadata:
   namespace: default
 spec:
   ports:
-  - name: tcp-80-8080
+  - name: tcp-8080-8080-moon
     port: 8080
     protocol: TCP
     targetPort: 8080
@@ -50,6 +50,4 @@ spec:
   sessionAffinity: None
   type: LoadBalancer
 status:
-  loadBalancer:
-    ingress:
-    - ip: 115.159.20.32
+  loadBalancer: {}
